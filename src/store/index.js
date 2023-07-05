@@ -28,25 +28,25 @@ export default createStore({
 },
   actions: {
     getProjects: async (context) => {
-      fetch("https://ethan7lesar.github.io/data/db.json")
+      fetch("https://sisiphopeps.github.io/data/projectsdb.json")
         .then((res) => res.json())
         .then((projects) => context.commit("setProjects", projects));}
   },
 
   getTestimonials: async (context) => {
-    fetch("https://ethan7lesar.github.io/data/db.json")
+    fetch("https://sisiphopeps.github.io/data/testimonialsdb.json")
       .then((res) => res.json())
       .then((testimonials) => context.commit("setTestimonials", testimonials));
   },
 
   getSkills: async (context) => {
-    fetch("https://ethan7lesar.github.io/data/db.json")
+    fetch("https://sisiphopeps.github.io/data/skillsdb.json")
       .then((res) => res.json())
       .then((skills) => context.commit("setSkills", skills));
   },
 
   getEducation: async (context) => {
-    fetch("https://ethan7lesar.github.io/data/db.json")
+    fetch("https://sisiphopeps.github.io/data/educationdb.json")
       .then((res) => res.json())
       .then((education) => context.commit("setEducation", education));
   },
