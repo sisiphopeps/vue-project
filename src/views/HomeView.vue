@@ -18,6 +18,8 @@ export default {
     color:white;
     font-weight: bold;
    background-size: cover;
-   min-height:100vh;
+   /* min-height:100vh; */
+   width: 100%;
+   height: 100vh;
   }
 </style>
